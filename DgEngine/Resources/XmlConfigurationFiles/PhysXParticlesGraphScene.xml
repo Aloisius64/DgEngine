@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<DgGraphScene>
+  <SceneObject id="DirLight1" tag="Light" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0" y="0" z="0"/>
+        <Rotation x="45" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+      <Light type="Directional">
+        <Color r="0.9044118" g="0.8977617" b="0.8977617"/>
+        <AmbientIntensity value="0.08"/>
+        <DiffuseIntensity value="0.8"/>
+        <Attenuation constant="0.1" linear="9" exp="0.1"/>
+        <Cutoff value="30"/>
+      </Light>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Plane" tag="Plane" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="-0.1" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="10.0" y="10.0" z="10.0"/>
+      </Transform>
+      <Mesh path="./Resources/Plane/plane.obj"></Mesh>
+      <Physics>
+        <RigidBody static="true"
+                   mass="1.0"
+                   drag="1.0"
+                   angularDrag="0.05"
+                   gravity="true"
+                   kinematic="false"
+                   collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <PlaneCollider isTrigger="false"
+                direction="Y-Axis">
+            <PhysicsMaterial name="cubeMaterial3"
+                 dynamicFriction="0.6"
+                 staticFriction="0.6"
+                 restitution="0.0">
+            </PhysicsMaterial>
+            <Center x="0.0" y="0.0" z="0.0"/>
+          </PlaneCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Water" tag="ParticlesSystem" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-10.0" y="15.0" z="0.0"/>
+        <Rotation x="-90.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+      <Particles>
+        <ParticleSystemType value="FLUID"/>
+        <ParticleCount value="1000"/>
+        <UseLifetime value="false"/>
+        <!--<Lifetime value=""/>-->
+        <!--<MaxParticles value=""/>-->
+        <Restitution value="0.3f"/>
+        <Viscosity value="60.0f"/>
+        <Stiffness value="45.0f"/>
+        <DynamicFriction value="0.001f"/>
+        <ParticleDistance value="0.8f"/>
+        <GridSize value="5.0f"/>
+        <RestOffset value="0.24f"/>
+        <ContactOffset value="0.48"/>
+        <MaxMotionDistance value="0.3f"/>
+        <Damping value="0.0f"/>
+        <!--<ExternalAcceleration x="" y="" z=""/>-->
+        <!--<Emitter value=""/>-->
+        <EmitterShape value="RECTANGLE"/>
+        <!--<EmitterTransform xT="" yT="" zT="" xR="" yR="" zR=""/>-->
+        <EmitterExtentX value="1.5f"/>
+        <EmitterExtentY value="1.5f"/>
+        <EmitterSpacing value="0.81f"/>
+        <EmitterRandomAngle value="0.0f"/>
+        <EmitterRandomPos x="0.0f" y="0.0f" z="0.0f"/>
+        <!--<EmitterRate value=""/>-->
+        <EmitterMaxRate value="1000"/>
+        <EmitterWidth value="1.5f"/>
+        <EmitterVelocity value="9.0f"/>
+        <!--<ParticleSystemRenderType value="BILLBOARD"/>-->
+        <ParticleSystemRenderType value="MESH"/>
+        <PathBillboardTexture value="./Resources/Textures/water.dds"/>
+        <PathMesh value="./Resources/Cube/Cube.obj"/>
+      </Particles>
+    </Components>
+  </SceneObject>
+  <SceneObject id="DrainWater" tag="ParticlesSystem" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-10.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+      <Particles>
+        <ParticleSystemType value="DRAIN"/>
+        <BoxCollider hx="20.0f" hy="1.0f" hz="20.0f"/>
+        <!--<SphereCollider radius="10.0f"/>-->
+        <!--<PlaneCollider direction="Y-Axis"/>-->
+      </Particles>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Smoke" tag="ParticlesSystem" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="10.0" y="5.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+      <Particles>
+        <ParticleSystemType value="PARTICLE"/>
+        <ParticleCount value="200"/>
+        <UseLifetime value="true"/>
+        <Lifetime value="2.5f"/>
+        <!--<MaxParticles value=""/>-->
+        <Restitution value="0.2f"/>
+        <!--<Viscosity value=""/>-->
+        <!--<Stiffness value=""/>-->
+        <DynamicFriction value="0.05f"/>
+        <!--<ParticleDistance value=""/>-->
+        <GridSize value="3.0f"/>
+        <RestOffset value="0.0143f"/>
+        <ContactOffset value="0.0286f"/>
+        <MaxMotionDistance value="0.43f"/>
+        <Damping value="0.5f"/>
+        <ExternalAcceleration x="0.0f" y="17.0f" z="0.0f"/>
+        <!--<Emitter value=""/>-->
+        <EmitterShape value="RECTANGLE"/>
+        <!--<EmitterTransform xT="" yT="" zT="" xR="" yR="" zR=""/> -->
+        <!-- Read this from DgTrasform -->
+        <EmitterExtentX value="1.0f"/>
+        <EmitterExtentY value="1.0f"/>
+        <EmitterSpacing value="0.1f"/>
+        <EmitterRandomAngle value="11.25f"/>
+        <!--<EmitterRandomPos x="" y="" z=""/>-->
+        <EmitterRate value="20.0f"/>
+        <!--<EmitterMaxRate value=""/>-->
+        <!--<EmitterWidth value=""/>-->
+        <EmitterVelocity value="3.0f"/>
+        <ParticleSystemRenderType value="BILLBOARD"/>
+        <PathBillboardTexture value="./Resources/Textures/smoke.dds"/>
+      </Particles>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Fire" tag="ParticlesSystem" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="10.0" y="5.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+      <Particles>
+        <ParticleSystemType value="PARTICLE"/>
+        <ParticleCount value="400"/>
+        <UseLifetime value="true"/>
+        <Lifetime value="1.80f"/>
+        <!--<MaxParticles value=""/>-->
+        <Restitution value="0.2f"/>
+        <!--<Viscosity value=""/>-->
+        <!--<Stiffness value=""/>-->
+        <DynamicFriction value="0.04f"/>
+        <!--<ParticleDistance value=""/>-->
+        <GridSize value="3.0f"/>
+        <RestOffset value="0.0143f"/>
+        <ContactOffset value="0.0286f"/>
+        <MaxMotionDistance value="0.43f"/>
+        <Damping value="0.5f"/>
+        <ExternalAcceleration x="0.0f" y="8.5f" z="0.0f"/>
+        <!--<Emitter value=""/>-->
+        <EmitterShape value="RECTANGLE"/>
+        <!--<EmitterTransform xT="" yT="" zT="" xR="" yR="" zR=""/> -->
+        <!-- Read this from DgTrasform -->
+        <EmitterExtentX value="2.5f"/>
+        <EmitterExtentY value="2.5f"/>
+        <EmitterSpacing value="0.05f"/>
+        <EmitterRandomAngle value="11.25f"/>
+        <!--<EmitterRandomPos x="" y="" z=""/>-->
+        <EmitterRate value="25.0f"/>
+        <!--<EmitterMaxRate value=""/>-->
+        <!--<EmitterWidth value=""/>-->
+        <EmitterVelocity value="1.0f"/>
+        <ParticleSystemRenderType value="BILLBOARD"/>
+        <PathBillboardTexture value="./Resources/Textures/fire.dds"/>
+      </Particles>
+    </Components>
+  </SceneObject>
+  <!--For a correct camera behaviour insert this node always to the end-->
+  <SceneObject id="CameraController" tag="Empty" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+</DgGraphScene>

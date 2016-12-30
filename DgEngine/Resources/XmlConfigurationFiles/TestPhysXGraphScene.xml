@@ -1,0 +1,974 @@
+<?xml version="1.0"?>
+<GraphScene>
+  <SceneObject id="Camera" tag="MainCamera" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-3.0" y="9.0" z="30.0"/>
+        <Rotation x="0.0" y="180.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Camera>
+        <BackgroundColor r="0.4" g="0.4" b="0.4" a="1.0"/>
+        <fovy value="45.0f"/>
+        <zNear value="1.0"/>
+        <zFar value="100.0"/>
+        <!--<Viewport x="" y="" width="" height=""/>-->
+      </Camera>
+      <Physics>
+        <CharacterController shapeType="box"
+        upDirectionX="0.0"
+        upDirectionY="1.0"
+        upDirectionZ="0.0"
+        slopeLimit="0.5"
+        invisibleWallHeight="0.0"
+        maxJumpHeight="0.4"
+        contactOffset="0.05"
+        stepOffset="1.0"
+        density="0.0"
+        scaleCoeff="0.0"
+        volumeGrowth="0.0"
+        halfHeight="2.0"
+        halfSideExtent="1.0"
+        halfForwardExtent="1.0">
+          <PhysicsMaterial name="characterMaterial"
+          dynamicFriction="0.6"
+          staticFriction="0.4"
+          restitution="0.2">
+          </PhysicsMaterial>
+        </CharacterController>
+      </Physics>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Plane" tag="Plane" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="10.0" y="1.0" z="10.0"/>
+      </Transform>
+      <Physics>
+        <RigidBody static="true"
+                   mass="1.0"
+                   drag="1.0"
+                   angularDrag="0.05"
+                   gravity="true"
+                   kinematic="false"
+                   collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <PlaneCollider isTrigger="false"
+                direction="Y-Axis">
+            <PhysicsMaterial name="cubeMaterial3"
+                 dynamicFriction="0.6"
+                 staticFriction="0.6"
+                 restitution="0.0">
+            </PhysicsMaterial>
+            <Center x="0.0" y="0.0" z="0.0"/>
+          </PlaneCollider>
+        </Colliders>
+      </Physics>
+      <Mesh path="./Resources/Plane/Plane.obj">
+        <Materials>
+          <Material>
+            <ShaderName value="BaseMesh"/>
+            <MaterialName value="BlueCubeMaterial"/>
+            <Wireframe value="false"/>
+            <Opacity value="1.0"/>
+            <BumpScaling value="1.0"/>
+            <Shininess value="32.0"/>
+            <Reflectivity value="0.0"/>
+            <Refraction value="1.0"/>
+            <ColorAlbedo r="0.5" g="0.7" b="0.5" a="1.0"/>
+            <ColorAmbient r="0.1" g="0.1" b="0.1" a="1.0"/>
+            <ColorSpecular r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <ColorEmissive r="0.0" g="0.0" b="0.0" a="1.0"/>
+            <TcScale x="25.0" y="25.0"/>
+            <TcOffset x="0.0" y="0.0"/>
+            <Texture type="DIFFUSE_TEXTURE"
+                               path="./Resources/Textures/field2.jpg"
+                               mipMap="true"
+                               wrapS="WRAP_REPEAT"
+                               wrapT="WRAP_REPEAT"
+                               magFilter="FILTER_NEAREST"
+                               minFilter="FILTER_NEAREST_MIPMAP_NEAREST"/>
+          </Material>
+        </Materials>
+      </Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <!--<SceneObject id="Character1" tag="Character" enabled="true">
+    <Components>
+      <Behaviour></Behaviour>
+      <Transform>
+        <Position x="10.0" y="14.0" z="-7.0"/>
+        <Rotation x="-90.0" y="45.0" z="0.0"/>
+        <Scale x="0.025" y="0.025" z="0.025"/>
+      </Transform>
+      <Mesh path="./Resources/Giant/Giant.dae"></Mesh>
+      <Physics>
+        <CharacterController shapeType="capsule"
+                           upDirectionX="0.0"
+                           upDirectionY="1.0"
+                           upDirectionZ="0.0"
+                           slopeLimit="0.5"
+                           invisibleWallHeight="0.0"
+                           maxJumpHeight="0.4"
+                           contactOffset="0.05"
+                           stepOffset="0.01"
+                           density="0.0"
+                           scaleCoeff="0.0"
+                           volumeGrowth="0.0"
+                           radius ="1.0"
+                           height="5.0"
+                           halfHeight="2.5"
+                           halfSideExtent="0.5"
+                           halfForwardExtent="0.5">
+          <PhysicsMaterial name="characterMaterial"
+                       dynamicFriction="0.6"
+                       staticFriction="0.4"
+                       restitution="0.2">
+          </PhysicsMaterial>
+        </CharacterController>
+      </Physics>
+    </Components>
+    <SceneObject id="CubeCharacter" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="5.0" y="0.0" z="0.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="50.0" y="50.0" z="50.0"/>
+        </Transform>
+        <Mesh path="./Resources/SolarSystem/PlanetAppEarth/Earth.obj"></Mesh>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>-->
+  <SceneObject id="CubeGroup1" tag="Cube" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+    </Components>
+    <SceneObject id="Cube1_1" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="27.0" z="0.0"/>
+          <Rotation x="45.0" y="0.0" z="45.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="1.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube2_1" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="32.0" z="0.0"/>
+          <Rotation x="70.0" y="15.0" z="45.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="10.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial2"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.2">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube3_1" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="37.0" z="0.0"/>
+          <Rotation x="20.0" y="10.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="32.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial2"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube4_1" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.5" y="42.0" z="0.0"/>
+          <Rotation x="0.0" y="-10.0" z="10.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="64.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial2"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube5_1" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.5" y="47.0" z="0.5"/>
+          <Rotation x="10.0" y="10.0" z="10.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="1.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube6_1" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-0.5" y="52.0" z="0.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="1.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>
+  <SceneObject id="CubeGroup2" tag="Cube" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+    </Components>
+    <SceneObject id="Cube1_2" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-8.0" y="10.35" z="-6.0"/>
+          <Rotation x="45.0" y="0.0" z="45.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="1.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube2_2" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-8.0" y="15.0" z="-6.0"/>
+          <Rotation x="70.0" y="15.0" z="45.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="10.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial2"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.2">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube3_2" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-8.0" y="20.0" z="-6.0"/>
+          <Rotation x="20.0" y="10.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="32.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial2"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube4_2" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-8.0" y="25.0" z="-6.0"/>
+          <Rotation x="0.0" y="-10.0" z="10.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="64.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial2"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube5_2" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-8.0" y="30.0" z="-6.0"/>
+          <Rotation x="10.0" y="10.0" z="10.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="1.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Cube6_2" tag="Cube" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-8.0" y="35.0" z="-6.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+        <Physics>
+          <RigidBody static="false"
+                     mass="1.0"
+                     drag="1.0"
+                     angularDrag="0.05"
+                     gravity="true"
+                     kinematic="false"
+                     collisionDetection="Discrete">
+            <Contraints>
+              <FreezePosition x="false" y="false" z="false"/>
+              <FreezeRotation x="false" y="false" z="false"/>
+            </Contraints>
+          </RigidBody>
+          <Colliders>
+            <BoxCollider isTrigger="false">
+              <PhysicsMaterial name="cubeMaterial"
+                               dynamicFriction="0.6"
+                               staticFriction="0.6"
+                               restitution="0.0">
+              </PhysicsMaterial>
+              <Center x="0.0" y="0.0" z="0.0"/>
+              <Size x="0.5" y="0.5" z="0.5"/>
+            </BoxCollider>
+          </Colliders>
+        </Physics>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>
+  <SceneObject id="Sphere1" tag="Sphere" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="5.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Mesh path="./Resources/SolarSystem/PlanetAppMars/Earth.obj"></Mesh>
+      <Physics>
+        <RigidBody static="true"
+                   mass="1.0"
+                   drag="1.0"
+                   angularDrag="0.05"
+                   gravity="true"
+                   kinematic="false"
+                   collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <MeshCollider convex="false">
+            <PhysicsMaterial name="sphereMaterial"
+                             dynamicFriction="0.6"
+                             staticFriction="0.6"
+                             restitution="0.0">
+            </PhysicsMaterial>
+            <Mesh path="./Resources/SolarSystem/PlanetAppMars/Earth.obj"></Mesh>
+          </MeshCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+
+  </SceneObject>
+  <SceneObject id="Sphere2" tag="Sphere" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="25.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Mesh path="./Resources/SolarSystem/PlanetAppEarth/Earth.obj"></Mesh>
+      <Physics>
+        <RigidBody static="false"
+                   mass="1.0"
+                   drag="1.0"
+                   angularDrag="0.05"
+                   gravity="true"
+                   kinematic="false"
+                   collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <SphereCollider isTrigger="false"
+                    radius="1.2">
+            <PhysicsMaterial name="sphereMaterial"
+                             dynamicFriction="0.6"
+                             staticFriction="0.6"
+                             restitution="0.0">
+            </PhysicsMaterial>
+            <Center x="0.0" y="0.0" z="0.0"/>
+          </SphereCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Capsule1" tag="Capsule" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-5.5" y="20.5" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="2.0" z="1.0"/>
+      </Transform>
+      <Mesh path="./Resources/SolarSystem/PlanetAppSun/Earth.obj"></Mesh>
+      <Physics>
+        <RigidBody static="false"
+                   mass="1.0"
+                   drag="1.0"
+                   angularDrag="0.05"
+                   gravity="true"
+                   kinematic="false"
+                   collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <CapsuleCollider isTrigger="false"
+                     radius="0.5"
+                     height="1.0"
+                     direction="Y-Axis">
+            <PhysicsMaterial name="sphereMaterial"
+                            dynamicFriction="0.6"
+                            staticFriction="0.6"
+                            restitution="0.0">
+            </PhysicsMaterial>
+            <Center x="0.0" y="0.0" z="0.0"/>
+          </CapsuleCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <!--<SceneObject id="wrarcadiabase01" tag="Terrain" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0" y="4" z="0"/>
+        <Rotation x="-10" y="180" z="0"/>
+        <Scale x="0.01" y="0.01" z="0.01"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Terrain/wrarcadiabase01.FBX">
+      </Mesh>
+      <Physics>
+        <RigidBody static="true"
+                   mass="1.0"
+                   drag="1.0"
+                   angularDrag="0.05"
+                   gravity="false"
+                   kinematic="false"
+                   collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <MeshCollider convex="false"
+              isTrigger="false">
+            <PhysicsMaterial name="sphereMaterial"
+                            dynamicFriction="0.6"
+                            staticFriction="0.6"
+                            restitution="0.0">
+            </PhysicsMaterial>
+            <Mesh path="./Resources/Whiterun/Terrain/wrarcadiabase01.FBX"></Mesh>
+          </MeshCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>-->
+  <SceneObject id="wrhouse02" tag="Building" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="1.25" z="0.0"/>
+        <Rotation x="0" y="30.0" z="0"/>
+        <Scale x="0.01" y="0.01" z="0.01"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Buildings/wrhouse02.FBX">
+      </Mesh>
+      <Physics>
+        <RigidBody
+        static="true"
+        mass="1"
+        drag="0"
+        angularDrag="0.05"
+        gravity="false"
+        kinematic="false"
+        collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <MeshCollider convex="false"
+          isTrigger="false">
+            <PhysicsMaterial name="Default (Instance)"
+            dynamicFriction="0.6"
+            staticFriction="0.6"
+            restitution="0">
+            </PhysicsMaterial>
+            <Mesh path="./Resources/Whiterun/Buildings/wrhouse02.FBX">
+            </Mesh>
+          </MeshCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="wrbreezehome01" tag="Building" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-8.0" y="-1.35" z="-10.0"/>
+        <Rotation x="0" y="70.0" z="0"/>
+        <Scale x="0.01" y="0.01" z="0.01"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Buildings/wrbreezehome01.FBX">
+      </Mesh>
+      <Physics>
+        <RigidBody
+        static="true"
+        mass="1"
+        drag="0"
+        angularDrag="0.05"
+        gravity="false"
+        kinematic="false"
+        collisionDetection="Discrete">
+          <Contraints>
+            <FreezePosition x="false" y="false" z="false"/>
+            <FreezeRotation x="false" y="false" z="false"/>
+          </Contraints>
+        </RigidBody>
+        <Colliders>
+          <MeshCollider convex="false"
+          isTrigger="false">
+            <PhysicsMaterial name="Default (Instance)"
+            dynamicFriction="0.6"
+            staticFriction="0.6"
+            restitution="0">
+            </PhysicsMaterial>
+            <Mesh path="./Resources/Whiterun/Buildings/wrbreezehome01.FBX">
+            </Mesh>
+          </MeshCollider>
+        </Colliders>
+      </Physics>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Lights" tag="Lights" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0" y="0" z="0"/>
+        <Rotation x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+      <Behaviour></Behaviour>
+    </Components>
+    <SceneObject id="DirLight1" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0" y="0.0" z="0"/>
+          <Rotation x="-64.0" y="50.0" z="130.0"/>
+          <Scale x="1" y="1" z="1"/>
+        </Transform>
+        <Light type="Directional">
+          <Color r="0.9" g="0.5" b="0.1"/>
+          <AmbientIntensity value="0.1"/>
+          <DiffuseIntensity value="4.0"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.001"/>
+          <Cutoff value="30"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="DirLight2" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0" y="1.0" z="0"/>
+          <Rotation x="-142.056" y="13.9124" z="85.5341"/>
+          <Scale x="1" y="1" z="1"/>
+        </Transform>
+        <Light type="Directional">
+          <Color r="1.0" g="0.5" b="0.5"/>
+          <AmbientIntensity value="0.01"/>
+          <DiffuseIntensity value="1.0"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.0"/>
+          <Cutoff value="30"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>
+  <Environment>
+    <VR enabled="true"/>
+    <Skybox posX="./Resources/SkyBox2/right.jpg"
+        negX="./Resources/SkyBox2/left.jpg"
+        posY="./Resources/SkyBox2/top.jpg"
+        negY="./Resources/SkyBox2/bottom.jpg"
+        posZ="./Resources/SkyBox2/front.jpg"
+        negZ="./Resources/SkyBox2/back.jpg"/>
+    <!--<AmbientOcclusion kernel="64"/>-->
+    <!--<HDR exposure="0.747"/>-->
+    <!--<Bloom enabled="true"/>-->
+    <!--<OIT enabled="true"/>-->
+    <!--<Shadow enabled="true" mapSize="1024"/>-->
+  </Environment>
+</GraphScene>
+
+<!--<Physics>
+  <RigidBody static="false"
+             mass="1.0"
+             drag="1.0"
+             angularDrag="0.05"
+             gravity="true"
+             kinematic="false"
+             collisionDetection="Discrete">
+    <Contraints>
+      <FreezePosition x="false" y="false" z="false"/>
+      <FreezeRotation x="false" y="false" z="false"/>
+    </Contraints>
+  </RigidBody>
+  <Colliders>
+    <PlaneCollider isTrigger="false"
+                   direction="Y-Axis">
+      <PhysicsMaterial></PhysicsMaterial>
+      <Center x="0.0" y="0.0" z="0.0"/>
+    </PlaneCollider>
+
+    <BoxCollider isTrigger="false">
+      <PhysicsMaterial name="nameMaterial"
+                       dynamicFriction="0.6"
+                       staticFriction="0.6"
+                       restitution="0.0">
+      </PhysicsMaterial>
+      <Center x="0.0" y="0.0" z="0.0"/>
+      <Size x="1.0" y="1.0" z="1.0"/>
+    </BoxCollider>
+
+    <SphereCollider isTrigger="false"
+                    radius="0.5">
+      <PhysicsMaterial></PhysicsMaterial>
+      <Center x="0.0" y="0.0" z="0.0"/>
+    </SphereCollider>
+
+    <CapsuleCollider isTrigger="false"
+                     radius="0.5"
+                     height="1.0"
+                     direction="Y-Axis">
+      <PhysicsMaterial></PhysicsMaterial>
+      <Center x="0.0" y="0.0" z="0.0"/>
+    </CapsuleCollider>
+
+    <MeshCollider convex="false"
+                  isTrigger="false">
+      <PhysicsMaterial></PhysicsMaterial>
+      <Mesh path="./Resources/Giant/"></Mesh>
+    </MeshCollider>
+
+    <TerrainCollider>
+      <PhysicsMaterial></PhysicsMaterial>
+      <HeightFieldData></HeightFieldData>
+      <HeightFieldFile path=""></HeightFieldFile>
+    </TerrainCollider>
+  </Colliders>
+  
+          <CharacterController shapeType="capsule"
+                           upDirectionX="0.0"
+                           upDirectionY="1.0"
+                           upDirectionZ="0.0"
+                           slopeLimit="45.0"
+                           invisibleWallHeight="0.0"
+                           maxJumpHeight="0.4"
+                           contactOffset="0.0"
+                           stepOffset="0.3"
+                           density="0.0"
+                           scaleCoeff="0.0"
+                           volumeGrowth="0.0"
+                           halfHeight="0.5"
+                           halfSideExtent="0.5"
+                           halfForwardExtent="0.5"
+                           radius="0.5"
+                           height="2.0"
+                           mass="1.0"
+                           drag="1.0"
+                           angularDrag="0.05"
+                           gravity="true">
+          <PhysicsMaterial name="characterMaterial"
+                       dynamicFriction="0.6"
+                       staticFriction="0.6"
+                       restitution="0.0">
+          </PhysicsMaterial>
+        </CharacterController>
+</Physics>-->

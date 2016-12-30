@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<GraphScene>
+  <SceneObject id="Camera" tag="MainCamera" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="18.0" z="46.0"/>
+        <Rotation x="0.0" y="180.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Camera>
+        <BackgroundColor r="0.1" g="0.1" b="0.1" a="1.0"/>
+        <fovy value="45.0f"/>
+        <zNear value="1.0"/>
+        <zFar value="1000.0"/>
+      </Camera>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Planes" tag="Terrain" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="1.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="2.0" y="2.0" z="2.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+    </Components>
+    <SceneObject id="Plane1" tag="Terrain" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="0.0" z="0.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Plane/Plane.obj"></Mesh>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Plane2" tag="Terrain" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="16.0" z="-16.0"/>
+          <Rotation x="90.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Plane/Plane.obj"></Mesh>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Plane3" tag="Terrain" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="16.0" y="16.0" z="0.0"/>
+          <Rotation x="90.0" y="-90.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Plane/Plane.obj"></Mesh>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Plane4" tag="Terrain" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-16.0" y="16.0" z="0.0"/>
+          <Rotation x="90.0" y="90.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Plane/Plane.obj"></Mesh>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Plane5" tag="Terrain" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="32.0" z="0.0"/>
+          <Rotation x="180.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Mesh path="./Resources/Plane/Plane.obj"></Mesh>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>
+  <SceneObject id="Model1" tag="Model" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="4.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="3.0" y="3.0" z="3.0"/>
+      </Transform>
+      <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Model2" tag="Model" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="9.0" y="8.0" z="-5.0"/>
+        <Rotation x="6.0" y="0.0" z="0.0"/>
+        <Scale x="3.0" y="3.0" z="3.0"/>
+      </Transform>
+      <Mesh path="./Resources/SolarSystem/PlanetAppMars/Earth.obj"></Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Model3" tag="Model" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="20.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="3.0" y="3.0" z="3.0"/>
+      </Transform>
+      <Mesh path="./Resources/Cube/Cube.obj"></Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Lights" tag="Light" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Behaviour></Behaviour>
+    </Components>
+    <SceneObject id="Point1" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="10.0" z="0.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Light type="Point">
+          <Color r="1.0" g="1.0" b="1.0"/>
+          <AmbientIntensity value="0.1"/>
+          <DiffuseIntensity value="1.0"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.001"/>
+          <Cutoff value="30.0"/>
+          <ShadowType value="HARD_SHADOW"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <!--<SceneObject id="Point2" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-5.0" y="10.0" z="5.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Light type="Point">
+          <Color r="0.0" g="1.0" b="0.0"/>
+          <AmbientIntensity value="0.1"/>
+          <DiffuseIntensity value="1.0"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.001"/>
+          <Cutoff value="30.0"/>
+          <ShadowType value="NO_SHADOW"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>-->
+    <SceneObject id="Sun" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="5.0" z="0.0"/>
+          <Rotation x="0.0" y="180.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Light type="Directional">
+          <Color r="1.0" g="1.0" b="1.0"/>
+          <AmbientIntensity value="0.01"/>
+          <DiffuseIntensity value="0.8"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.0"/>
+          <Cutoff value="0.0"/>
+          <ShadowType value="HARD_SHADOW"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Sun2" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="5.0" z="0.0"/>
+          <Rotation x="20.0" y="160.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Light type="Directional">
+          <Color r="1.0" g="2.0" b="0.0"/>
+          <AmbientIntensity value="0.01"/>
+          <DiffuseIntensity value="0.8"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.0"/>
+          <Cutoff value="0.0"/>
+          <ShadowType value="HARD_SHADOW"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Spot1" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="0.0" y="7.0" z="8.0"/>
+          <Rotation x="0.0" y="180.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Light type="Spot">
+          <Color r="1.0" g="0.8" b="0.0"/>
+          <AmbientIntensity value="0.1"/>
+          <DiffuseIntensity value="4.0"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.001"/>
+          <Cutoff value="60.0"/>          
+          <ShadowType value="HARD_SHADOW"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Spot2" tag="Light" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="5.0" y="7.0" z="11.0"/>
+          <Rotation x="20.0" y="160.0" z="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </Transform>
+        <Light type="Spot">
+          <Color r="0.0" g="0.2" b="1.0"/>
+          <AmbientIntensity value="0.1"/>
+          <DiffuseIntensity value="8.0"/>
+          <Attenuation constant="1.0" linear="0.1" exp="0.001"/>
+          <Cutoff value="60.0"/>
+          <ShadowType value="HARD_SHADOW"/>
+        </Light>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>
+  <Environment>
+    <!--<AmbientOcclusion kernel="64"/>-->
+    <!--<Shadow enabled="true" mapSize="512"/>-->
+    <Shadow enabled="true" mapSize="1024"/>
+    <!--<Shadow enabled="true" mapSize="2048"/>-->
+    <!--<Skybox posX="./Resources/SkyBox2/left.jpg"
+        negX="./Resources/SkyBox2/right.jpg"
+        posY="./Resources/SkyBox2/top.jpg"
+        negY="./Resources/SkyBox2/bottom.jpg"
+        posZ="./Resources/SkyBox2/front.jpg"
+        negZ="./Resources/SkyBox2/back.jpg"/>-->
+  </Environment>
+</GraphScene>

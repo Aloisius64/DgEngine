@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Configuration>
+  <NameApplication name="DgEngine"/>
+  <Window fullScreen="false" width="1366" height="920" centered="true" xPos="64.0" yPos="64.0"/>
+  <Resize enabled="false"/>
+  <Decorated enabled="true"/>
+  <Focused enabled="false"/>
+  <Floating enabled="false"/>
+  <MSAA sample="0"/>
+  <DepthBuffer enabled="true"/>
+  <StencilBuffer enabled="false"/>
+  <Culling enabled="true" type="back"/>
+  <Blending enabled="false"/>
+  <PolygonMode type="CCW"/>
+  <RefreshRate rate="60"/>
+</Configuration>

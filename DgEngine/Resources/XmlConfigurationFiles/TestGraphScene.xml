@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<GraphScene>
+  <SceneObject id="Camera" tag="MainCamera" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="4.0" z="20.0"/>
+        <Rotation x="0.0" y="180.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Camera>
+        <BackgroundColor r="0.4" g="0.4" b="0.4" a="1.0"/>
+        <fovy value="45.0f"/>
+        <zNear value="1.0"/>
+        <zFar value="100.0"/>
+        <Viewport x="0" y="0" width="1.0" height="1.0"/>
+      </Camera>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <!--<SceneObject id="Camera1" tag="FirstCamera" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="4.0" z="20.0"/>
+        <Rotation x="0.0" y="180.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Camera>
+        <BackgroundColor r="0.4" g="0.4" b="0.4" a="1.0"/>
+        <fovy value="45.0f"/>
+        <zNear value="1.0"/>
+        <zFar value="100.0"/>
+        <Viewport x="0" y="0" width="0.5" height="1.0"/>
+      </Camera>      
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Camera2" tag="SecondCamera" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="4.0" z="20.0"/>
+        <Rotation x="0.0" y="180.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Camera>
+        <BackgroundColor r="0.4" g="0.4" b="0.4" a="1.0"/>
+        <fovy value="45.0f"/>
+        <zNear value="1.0"/>
+        <zFar value="100.0"/>
+        <Viewport x="540" y="0" width="0.5" height="1.0"/>
+      </Camera>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>-->
+  <SceneObject id="House" tag="Building" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="0.005" y="0.005" z="0.005"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Buildings/wrhouse02.FBX"></Mesh>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+    <SceneObject id="Brazier1" tag="Brazier" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="3.0" y="5.0" z="3.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="5.0" y="5.0" z="5.0"/>
+        </Transform>
+        <Mesh path="./Resources/Whiterun/Braziers/wrbrazier01.FBX"></Mesh>
+        <Audio></Audio>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Brazier2" tag="Brazier" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-3.0" y="5.0" z="3.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="5.0" y="5.0" z="5.0"/>
+        </Transform>
+        <Mesh path="./Resources/Whiterun/Braziers/wrbrazier01.FBX"></Mesh>
+        <Audio></Audio>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Brazier3" tag="Brazier" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="3.0" y="5.0" z="-3.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="5.0" y="5.0" z="5.0"/>
+        </Transform>
+        <Mesh path="./Resources/Whiterun/Braziers/wrbrazier01.FBX"></Mesh>
+        <Audio></Audio>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+    <SceneObject id="Brazier4" tag="Brazier" enabled="true">
+      <Components>
+        <Transform>
+          <Position x="-3.0" y="5.0" z="-3.0"/>
+          <Rotation x="0.0" y="0.0" z="0.0"/>
+          <Scale x="5.0" y="5.0" z="5.0"/>
+        </Transform>
+        <Mesh path="./Resources/Whiterun/Braziers/wrbrazier01.FBX"></Mesh>
+        <Audio></Audio>
+        <Behaviour></Behaviour>
+      </Components>
+    </SceneObject>
+  </SceneObject>
+  <SceneObject id="House2" tag="Building" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="5.0" y="0.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="0.002" y="0.002" z="0.002"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Buildings/wrbreezehome01.FBX"></Mesh>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Cube" tag="Cube" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-10.0" y="3.0" z="4.0"/>
+        <Rotation x="-60.0" y="32.0" z="-90.0"/>
+        <Scale x="5.0" y="5.0" z="5.0"/>
+      </Transform>
+      <Mesh path="./Resources/Cube/Cube.obj">
+        <Materials>
+          <Material>
+            <ShaderName value="BaseMesh"/>
+            <MaterialName value="BlueCubeMaterial"/>
+            <Wireframe value="false"/>
+            <Opacity value="1.0"/>
+            <BumpScaling value="1.0"/>
+            <Shininess value="32.0"/>
+            <Reflectivity value="0.0"/>
+            <Refraction value="1.0"/>
+            <ColorAlbedo r="0.0" g="0.0" b="1.0" a="1.0"/>
+            <ColorAmbient r="0.1" g="0.1" b="0.1" a="1.0"/>
+            <ColorSpecular r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <ColorEmissive r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <TcScale x="1.0" y="1.0"/>
+            <TcOffset x="0.0" y="0.0"/>
+            <Texture type="DIFFUSE_TEXTURE"
+                               path="./Resources/Textures/engineflare.dds"
+                               mipMap="true"
+                               wrapS="WRAP_REPEAT"
+                               wrapT="WRAP_REPEAT"
+                               magFilter="FILTER_NEAREST"
+                               minFilter="FILTER_NEAREST_MIPMAP_NEAREST"/>
+            <Texture type="EMISSIVE_TEXTURE"
+                     path="./Resources/Textures/logo.dds"
+                     mipMap="true"
+                     wrapS="WRAP_REPEAT"
+                     wrapT="WRAP_REPEAT"
+                     magFilter="FILTER_LINEAR"
+                     minFilter="FILTER_LINEAR"/>
+          </Material>
+        </Materials>
+      </Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Sphere1" tag="Sphere" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="7.0" y="9.0" z="-16.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="5.0" y="5.0" z="5.0"/>
+      </Transform>
+      <Mesh path="./Resources/SolarSystem/PlanetAppMars/Earth.obj"></Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Stone" tag="Stone" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-5.0" y="6.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="0.01" y="0.01" z="0.01"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Tombstones/tombstone01.FBX"></Mesh>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Plane" tag="Terrain" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="0.0" y="-1.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Mesh path="./Resources/Plane/Plane.obj"></Mesh>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Tree" tag="Tree" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-18.0" y="0.0" z="-25.0"/>
+        <Rotation x="0.0" y="-30.0" z="0.0"/>
+        <Scale x="0.025" y="0.025" z="0.025"/>
+      </Transform>
+      <Mesh path="./Resources/Whiterun/Terrain/wrtempletree02.FBX">
+      </Mesh>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Character1" tag="Character" enabled="true">
+    <Components>
+      <Behaviour></Behaviour>
+      <Transform>
+        <Position x="6.0" y="-1.0" z="7.0"/>
+        <Rotation x="0.0" y="45.0" z="0.0"/>
+        <Scale x="0.025" y="0.025" z="0.025"/>
+      </Transform>
+      <Mesh path="./Resources/Giant/Giant.dae">
+        <Flag PreTransformVertices="false"/>
+      </Mesh>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Sun" tag="Light" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-10.0" y="3.0" z="0.0"/>
+        <Rotation x="117.0" y="51.0" z="76.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Light type="Directional">
+        <Color r="1.0" g="1.0" b="1.0"/>
+        <AmbientIntensity value="0.06"/>
+        <DiffuseIntensity value="0.8"/>
+        <Attenuation constant="0.1" linear="0.1" exp="0.0"/>
+        <Cutoff value="0.0"/>
+      </Light>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Sun2" tag="Light" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-10.0" y="3.0" z="0.0"/>
+        <Rotation x="-91.0" y="59.0" z="-1.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Light type="Directional">
+        <Color r="1.0" g="0.0" b="0.0"/>
+        <AmbientIntensity value="0.02"/>
+        <DiffuseIntensity value="8.87"/>
+        <Attenuation constant="0.1" linear="0.1" exp="0.0"/>
+        <Cutoff value="0.0"/>
+      </Light>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Point" tag="Light" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="-5.0" y="1.0" z="0.0"/>
+        <Rotation x="0.0" y="0.0" z="0.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Light type="Point">
+        <Color r="0.0" g="0.0" b="1.0"/>
+        <AmbientIntensity value="0.1"/>
+        <DiffuseIntensity value="2.0"/>
+        <Attenuation constant="1.0" linear="0.1" exp="0.0"/>
+        <Cutoff value="0.0"/>
+      </Light>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <SceneObject id="Spot" tag="Light" enabled="true">
+    <Components>
+      <Transform>
+        <Position x="4.0" y="1.0" z="8.0"/>
+        <Rotation x="-163.0" y="5.0" z="-66.0"/>
+        <Scale x="1.0" y="1.0" z="1.0"/>
+      </Transform>
+      <Light type="Spot">
+        <Color r="0.0" g="1.0" b="0.0"/>
+        <AmbientIntensity value="0.1"/>
+        <DiffuseIntensity value="0.8"/>
+        <Attenuation constant="0.1" linear="0.1" exp="0.0"/>
+        <Cutoff value="42.0"/>
+      </Light>
+      <Audio></Audio>
+      <Behaviour></Behaviour>
+    </Components>
+  </SceneObject>
+  <Environment>
+    <!--<VR enabled="true"/>-->
+    <Skybox posX="./Resources/SkyBox2/right.jpg"
+        negX="./Resources/SkyBox2/left.jpg"
+        posY="./Resources/SkyBox2/top.jpg"
+        negY="./Resources/SkyBox2/bottom.jpg"
+        posZ="./Resources/SkyBox2/front.jpg"
+        negZ="./Resources/SkyBox2/back.jpg"/>
+    <AmbientOcclusion kernel="64"/>
+    <HDR exposure="0.747"/>
+    <Bloom enabled="true"/>
+    <!--<Shadow enabled="true" mapSize="1024"/>-->
+  </Environment>
+</GraphScene>
