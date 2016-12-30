@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: MeshCollider.h
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+//////////////
+// INCLUDES //
+//////////////
+
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "Collider.h"
+#include "..\SceneObject.h"
+
+////////////////
+// NAMESPACES //
+////////////////
+
+
+namespace dg {
+	class MeshCollider : public Collider {
+	public:
+		MeshCollider();
+		virtual ~MeshCollider();
+
+		virtual void Initialize(SceneObject*, const ColliderData&);
+		virtual string GetType();
+
+	private:
+		string	m_MeshPath;
+		bool	m_Convex;
+	};
+}

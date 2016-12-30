@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ApplicationManager.cpp" />
+    <ClCompile Include="Source\BloomFBO.cpp" />
+    <ClCompile Include="Source\Frustum.cpp" />
+    <ClCompile Include="Source\InfoBarRenderer.cpp" />
+    <ClCompile Include="Source\OculusVR.cpp" />
+    <ClCompile Include="Source\Plane.cpp" />
+    <ClCompile Include="Source\ShadowMapArray.cpp" />
+    <ClCompile Include="Source\SubstateMesh.cpp" />
+    <ClCompile Include="Source\HdrFBO.cpp" />
+    <ClCompile Include="Source\OIT.cpp" />
+    <ClCompile Include="Source\SubstateRenderer.cpp" />
+    <ClCompile Include="Source\CellularAutomata.cpp" />
+    <ClCompile Include="Source\Mesh.cpp" />
+    <ClCompile Include="Source\CubemapTexture.cpp" />
+    <ClCompile Include="Source\Animator.cpp" />
+    <ClCompile Include="Source\ApplicationScene.cpp" />
+    <ClCompile Include="Source\Behaviour.cpp" />
+    <ClCompile Include="Source\Camera.cpp" />
+    <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\Environment.cpp" />
+    <ClCompile Include="Source\ImageLoader.cpp" />
+    <ClCompile Include="Source\IOBuffer.cpp" />
+    <ClCompile Include="Source\Material.cpp" />
+    <ClCompile Include="Source\Physics\BoxCollider.cpp" />
+    <ClCompile Include="Source\Physics\CapsuleCollider.cpp" />
+    <ClCompile Include="Source\Physics\CharacterController.cpp" />
+    <ClCompile Include="Source\Physics\Collider.cpp" />
+    <ClCompile Include="Source\Physics\ParticleEmitter.cpp" />
+    <ClCompile Include="Source\Physics\ParticleEmitterPressure.cpp" />
+    <ClCompile Include="Source\Physics\ParticleEmitterRate.cpp" />
+    <ClCompile Include="Source\Physics\ParticleFactory.cpp" />
+    <ClCompile Include="Source\Physics\PhysX.cpp" />
+    <ClCompile Include="Source\Physics\PhysicsMaterial.cpp" />
+    <ClCompile Include="Source\Physics\PlaneCollider.cpp" />
+    <ClCompile Include="Source\Physics\PxRandom.cpp" />
+    <ClCompile Include="Source\Physics\RigidBody.cpp" />
+    <ClCompile Include="Source\Physics\SphereCollider.cpp" />
+    <ClCompile Include="Source\Physics\TerrainCollider.cpp" />
+    <ClCompile Include="Source\Physics\MeshCollider.cpp" />
+    <ClCompile Include="Source\Physics\ParticleSystem.cpp" />
+    <ClCompile Include="Source\RandomTexture.cpp" />
+    <ClCompile Include="Source\SceneObject.cpp" />
+    <ClCompile Include="Source\DataManager.cpp" />
+    <ClCompile Include="Source\Configuration.cpp" />
+    <ClCompile Include="Source\Light.cpp" />
+    <ClCompile Include="Source\MeshRenderer.cpp" />
+    <ClCompile Include="Source\Particles.cpp" />
+    <ClCompile Include="Source\Physics.cpp" />
+    <ClCompile Include="Source\Gizmo.cpp" />
+    <ClCompile Include="Source\SceneLoader.cpp" />
+    <ClCompile Include="Source\Script.cpp" />
+    <ClCompile Include="Source\Shader.cpp" />
+    <ClCompile Include="Source\ShadowCubeMapFBO.cpp" />
+    <ClCompile Include="Source\SkyBox.cpp" />
+    <ClCompile Include="Source\SubstateRenderer2D_Surface.cpp" />
+    <ClCompile Include="Source\SubstateRenderer2D_Flat.cpp" />
+    <ClCompile Include="Source\SubstateRenderer3D_Cube.cpp" />
+    <ClCompile Include="Source\SubstateRenderer3D_Volume.cpp" />
+    <ClCompile Include="Source\TextRenderer.cpp" />
+    <ClCompile Include="Source\Transform.cpp" />
+    <ClCompile Include="Source\Input.cpp" />
+    <ClCompile Include="Source\irrXml\irrXML.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\ShadowMapFBO.cpp" />
+    <ClCompile Include="Source\System.cpp" />
+    <ClCompile Include="Source\System_GLFW.cpp" />
+    <ClCompile Include="Source\Texture.cpp" />
+    <ClCompile Include="Source\TimeClock.cpp" />
+    <ClCompile Include="Source\UI.cpp" />
+    <ClCompile Include="Source\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\BloomFBO.h" />
+    <ClInclude Include="Source\CameraFPSControllerScript.h" />
+    <ClInclude Include="Source\FPSRendererScript.h" />
+    <ClInclude Include="Source\Frustum.h" />
+    <ClInclude Include="Source\InfoBarRenderer.h" />
+    <ClInclude Include="Source\LogoScene.h" />
+    <ClInclude Include="Source\OculusVR.h" />
+    <ClInclude Include="Source\Plane.h" />
+    <ClInclude Include="Source\Scene_HeatTransfer.h" />
+    <ClInclude Include="Source\Scene_Life2Di.h" />
+    <ClInclude Include="Source\Scene_Life3Di.h" />
+    <ClInclude Include="Source\Scene_Wave.h" />
+    <ClInclude Include="Source\ShaderBloom.h" />
+    <ClInclude Include="Source\ShaderInfoBarRenderer.h" />
+    <ClInclude Include="Source\ShaderLogo.h" />
+    <ClInclude Include="Source\ShaderOcclusionRender.h" />
+    <ClInclude Include="Source\ShaderShadowCubeMap2.h" />
+    <ClInclude Include="Source\ShaderShadowMap2.h" />
+    <ClInclude Include="Source\ShaderSubstateMeshInstanced.h" />
+    <ClInclude Include="Source\ShaderSubstateMeshSurface.h" />
+    <ClInclude Include="Source\ShaderSubstateMeshVolumeFrontFace.h" />
+    <ClInclude Include="Source\ShaderSubstateMeshVolume.h" />
+    <ClInclude Include="Source\ShaderTextRenderer.h" />
+    <ClInclude Include="Source\ShadowMapArray.h" />
+    <ClInclude Include="Source\SubstateMesh.h" />
+    <ClInclude Include="Source\HdrFBO.h" />
+    <ClInclude Include="Source\OIT.h" />
+    <ClInclude Include="Source\Scene_Life3D.h" />
+    <ClInclude Include="Source\Scene_MultiView.h" />
+    <ClInclude Include="Source\ShaderNormalViewer.h" />
+    <ClInclude Include="Source\ShaderPostProcessing.h" />
+    <ClInclude Include="Source\SimulationControllerScript.h" />
+    <ClInclude Include="Source\SubstateRenderer.h" />
+    <ClInclude Include="Source\CellularAutomata.h" />
+    <ClInclude Include="Source\Mesh.h" />
+    <ClInclude Include="Source\CameraCharacterController.h" />
+    <ClInclude Include="Source\ChangeSceneScript.h" />
+    <ClInclude Include="Source\CharacterControllerMove.h" />
+    <ClInclude Include="Source\CubemapTexture.h" />
+    <ClInclude Include="Source\Common.h" />
+    <ClInclude Include="Source\Animator.h" />
+    <ClInclude Include="Source\ApplicationManager.h" />
+    <ClInclude Include="Source\ApplicationScene.h" />
+    <ClInclude Include="Source\Behaviour.h" />
+    <ClInclude Include="Source\Camera.h" />
+    <ClInclude Include="Source\Component.h" />
+    <ClInclude Include="Source\Environment.h" />
+    <ClInclude Include="Source\ImageLoader.h" />
+    <ClInclude Include="Source\IOBuffer.h" />
+    <ClInclude Include="Source\IShadow.h" />
+    <ClInclude Include="Source\LookAtScript.h" />
+    <ClInclude Include="Source\Material.h" />
+    <ClInclude Include="Source\Mathematics.h" />
+    <ClInclude Include="Source\OpenCALFiles.h" />
+    <ClInclude Include="Source\Scene_SciddicaT.h" />
+    <ClInclude Include="Source\Physics\BoxCollider.h" />
+    <ClInclude Include="Source\Physics\CapsuleCollider.h" />
+    <ClInclude Include="Source\Physics\CharacterController.h" />
+    <ClInclude Include="Source\Physics\Collider.h" />
+    <ClInclude Include="Source\Physics\ParticleEmitter.h" />
+    <ClInclude Include="Source\Physics\ParticleEmitterPressure.h" />
+    <ClInclude Include="Source\Physics\ParticleEmitterRate.h" />
+    <ClInclude Include="Source\Physics\ParticleFactory.h" />
+    <ClInclude Include="Source\Physics\PhysX.h" />
+    <ClInclude Include="Source\Physics\PhysicsMaterial.h" />
+    <ClInclude Include="Source\Physics\PlaneCollider.h" />
+    <ClInclude Include="Source\Physics\PxRandom.h" />
+    <ClInclude Include="Source\Physics\RigidBody.h" />
+    <ClInclude Include="Source\Physics\SphereCollider.h" />
+    <ClInclude Include="Source\Physics\TerrainCollider.h" />
+    <ClInclude Include="Source\Physics\MeshCollider.h" />
+    <ClInclude Include="Source\Physics\ParticleSystem.h" />
+    <ClInclude Include="Source\Physics\PhysXIncludeFiles.h" />
+    <ClInclude Include="Source\RandomTexture.h" />
+    <ClInclude Include="Source\SceneObject.h" />
+    <ClInclude Include="Source\DataManager.h" />
+    <ClInclude Include="Source\Configuration.h" />
+    <ClInclude Include="Source\Light.h" />
+    <ClInclude Include="Source\MeshRenderer.h" />
+    <ClInclude Include="Source\Particles.h" />
+    <ClInclude Include="Source\Physics.h" />
+    <ClInclude Include="Source\Gizmo.h" />
+    <ClInclude Include="Source\SceneLoader.h" />
+    <ClInclude Include="Source\Script.h" />
+    <ClInclude Include="Source\Shader.h" />
+    <ClInclude Include="Source\ShaderBaseMesh.h" />
+    <ClInclude Include="Source\ShaderBlur.h" />
+    <ClInclude Include="Source\ShaderGeometry.h" />
+    <ClInclude Include="Source\ShaderGizmo.h" />
+    <ClInclude Include="Source\ShaderShadowCubeMap.h" />
+    <ClInclude Include="Source\ShaderShadowMap.h" />
+    <ClInclude Include="Source\ShaderSkinnedMesh.h" />
+    <ClInclude Include="Source\ShaderSkybox.h" />
+    <ClInclude Include="Source\ShaderSSAO.h" />
+    <ClInclude Include="Source\ShadowCubeMapFBO.h" />
+    <ClInclude Include="Source\SkyBox.h" />
+    <ClInclude Include="Source\TestScene_11.h" />
+    <ClInclude Include="Source\TestScene_15.h" />
+    <ClInclude Include="Source\Scene_Loader.h" />
+    <ClInclude Include="Source\Scene_Physics.h" />
+    <ClInclude Include="Source\Scene_Shadow.h" />
+    <ClInclude Include="Source\Scene_Whiterun.h" />
+    <ClInclude Include="Source\TextRenderer.h" />
+    <ClInclude Include="Source\Thread.h" />
+    <ClInclude Include="Source\ThreadPool.h" />
+    <ClInclude Include="Source\Transform.h" />
+    <ClInclude Include="Source\EnableDisableScript.h" />
+    <ClInclude Include="Source\Glossary.h" />
+    <ClInclude Include="Source\Input.h" />
+    <ClInclude Include="Source\irrXml\CXMLReaderImpl.h" />
+    <ClInclude Include="Source\irrXml\fast_atof.h" />
+    <ClInclude Include="Source\irrXml\heapsort.h" />
+    <ClInclude Include="Source\irrXml\irrArray.h" />
+    <ClInclude Include="Source\irrXml\irrString.h" />
+    <ClInclude Include="Source\irrXml\irrTypes.h" />
+    <ClInclude Include="Source\irrXml\irrXML.h" />
+    <ClInclude Include="Source\MovementScript.h" />
+    <ClInclude Include="Source\PhysXParticlesDemoAppScene.h" />
+    <ClInclude Include="Source\RandomPositionScript.h" />
+    <ClInclude Include="Source\RotationAboutTargetScript.h" />
+    <ClInclude Include="Source\RotationScript.h" />
+    <ClInclude Include="Source\ShadowMapFBO.h" />
+    <ClInclude Include="Source\System.h" />
+    <ClInclude Include="Source\System_GLFW.h" />
+    <ClInclude Include="Source\Texture.h" />
+    <ClInclude Include="Source\TimeClock.h" />
+    <ClInclude Include="Source\TrackingCameraScript.h" />
+    <ClInclude Include="Source\UI.h" />
+    <ClInclude Include="Source\Utils.h" />
+    <ClInclude Include="Source\VRAppUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Resources\XmlConfigurationFiles\Config.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\TestGraphScene.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\WhiterunGraphScene.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\WhiterunGraphScene_Backup.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\TestPhysXGraphScene.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\TestShadowGraphScene.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\gizmo.fs.glsl" />
+    <None Include="Shaders\gizmo.vs.glsl" />
+    <None Include="Shaders\base_mesh.fs.glsl" />
+    <None Include="Shaders\base_mesh.vs.glsl" />
+    <None Include="Shaders\bloom.fs.glsl" />
+    <None Include="Shaders\bloom.vs.glsl" />
+    <None Include="Shaders\infobar_renderer.fs.glsl" />
+    <None Include="Shaders\infobar_renderer.vs.glsl" />
+    <None Include="Shaders\logo.fs.glsl" />
+    <None Include="Shaders\logo.vs.glsl" />
+    <None Include="Shaders\normal_viewer.fs.glsl" />
+    <None Include="Shaders\normal_viewer.gs.glsl" />
+    <None Include="Shaders\normal_viewer.vs.glsl" />
+    <None Include="Shaders\post_processing.fs.glsl" />
+    <None Include="Shaders\post_processing.vs.glsl" />
+    <None Include="Shaders\occlusion_render.fs.glsl" />
+    <None Include="Shaders\occlusion_render.vs.glsl" />
+    <None Include="Shaders\skinned_mesh.vs.glsl" />
+    <None Include="Shaders\skybox.fs.glsl" />
+    <None Include="Shaders\skybox.vs.glsl" />
+    <None Include="Shaders\text_renderer.fs.glsl" />
+    <None Include="Shaders\text_renderer.vs.glsl" />
+    <None Include="Shaders\Shadow\shadow_cube_map.fs.glsl" />
+    <None Include="Shaders\Shadow\shadow_cube_map.gs.glsl" />
+    <None Include="Shaders\Shadow\shadow_cube_map.vs.glsl" />
+    <None Include="Shaders\Shadow\shadow_cube_map2.fs.glsl" />
+    <None Include="Shaders\Shadow\shadow_cube_map2.gs.glsl" />
+    <None Include="Shaders\Shadow\shadow_cube_map2.vs.glsl" />
+    <None Include="Shaders\Shadow\shadow_map.fs.glsl" />
+    <None Include="Shaders\Shadow\shadow_map.vs.glsl" />
+    <None Include="Shaders\Shadow\shadow_map2.fs.glsl" />
+    <None Include="Shaders\Shadow\shadow_map2.gs.glsl" />
+    <None Include="Shaders\Shadow\shadow_map2.vs.glsl" />
+    <None Include="Shaders\SSAO\blur.fs.glsl" />
+    <None Include="Shaders\SSAO\blur.vs.glsl" />
+    <None Include="Shaders\SSAO\geometry.fs.glsl" />
+    <None Include="Shaders\SSAO\geometry.vs.glsl" />
+    <None Include="Shaders\SSAO\ssao.fs.glsl" />
+    <None Include="Shaders\SSAO\ssao.vs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_instanced.fs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_instanced.gs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_instanced.vs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_surface.fs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_surface.vs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_volume_front_face.fs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_volume_transform.vs.glsl" />
+    <None Include="Shaders\Substates\substate_mesh_volume.fs.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DgEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="opengl.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E2074AF3-1915-4CFD-B171-8D042F220379}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DgEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Include;.\Include\assimp;.\Source;C:\SDKs\Nvidia - PhysX\Include;C:\SDKs\OculusSDK\LibOVR\Include;C:\libs\opencal-1.0\include;C:\SDKs\OculusSDK\LibOVRKernel\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Lib;C:\SDKs\Nvidia - PhysX\Lib\vc11win32;C:\libs\opencal-1.0\lib;C:\SDKs\OculusSDK\LibOVR\Lib\Windows\Win32\Debug\VS2012;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;assimp.lib;glfw3.lib;glfw3dll.lib;DevIL.lib;LibOVR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Include;.\Include\assimp;.\Source;.\Include\OpenCAL;.\Include\PhysX;.\Include\LibOVR;.\Include\LibOVRKernel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>.\Lib;.\Lib\OpenCAL;.\Lib\PhysX;.\Lib\LibOVR;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;assimp.lib;glfw3.lib;glfw3dll.lib;DevIL.lib;LibOVR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

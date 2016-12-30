@@ -1,0 +1,34 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: ShaderBlur.h
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+//////////////
+// INCLUDES //
+//////////////
+
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "Shader.h"
+
+////////////////
+// NAMESPACES //
+////////////////
+using namespace std;
+
+
+namespace dg {
+	class ShaderBlur : public Shader {
+	public:
+		ShaderBlur()
+			: Shader("./Shaders/SSAO/blur.vs.glsl",
+			"", "", "",
+			"./Shaders/SSAO/blur.fs.glsl") {
+			m_ShaderName = SHADER_BLUR;
+		}
+
+		virtual ~ShaderBlur() {}
+	};
+}

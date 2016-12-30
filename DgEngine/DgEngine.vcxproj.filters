@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{0099bc5c-488a-456b-9fcb-073a38a657c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\XmlConfigurationFiles">
+      <UniqueIdentifier>{0236d89e-4592-4c88-9323-f9e1e923fb83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\irrXml">
+      <UniqueIdentifier>{01ede0d5-5d99-4fe2-9919-890677092cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{60321a72-dddc-4d3a-9d14-9c720b6eb801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{cf6dc02a-ab7b-49a8-a7a1-1fdd82931e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application">
+      <UniqueIdentifier>{d001f085-b3c0-4413-a830-a3cc6a798e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Component">
+      <UniqueIdentifier>{fbe167af-1a4a-449d-a402-9b05eebe1f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{056f2244-bd35-4153-b565-339e4207b0b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameScenes">
+      <UniqueIdentifier>{f8ee42de-0021-4193-b932-6e6fd38c2171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PhysX">
+      <UniqueIdentifier>{dfe5ef30-0b8e-43f7-a58e-67d1bcec8ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scripts">
+      <UniqueIdentifier>{aa864f48-fdde-404c-9635-3bcb2946a7d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shader">
+      <UniqueIdentifier>{466dce01-6935-4953-8c6b-a1cfb50cc7ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{07cc3ecd-5b2c-4a36-b104-e06061a45089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{d103fbcd-87b0-489a-8f52-0ec0852f49b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{85f5b77a-e93a-4a89-9811-422fafeedb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PhysX">
+      <UniqueIdentifier>{9fdf853c-d666-4283-9a7b-1acd6431e894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shader">
+      <UniqueIdentifier>{1d06b15f-d1a1-40e4-9a1b-8143acc279ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\irrXml">
+      <UniqueIdentifier>{50a586f1-e6b7-4125-8d6d-fce01f91be71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PhysX\Particles">
+      <UniqueIdentifier>{45445211-6fc3-4a6a-9b95-70f197f48fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PhysX\Particles">
+      <UniqueIdentifier>{2214ca56-0873-4244-9b4f-aa8c62fa9ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Shadow">
+      <UniqueIdentifier>{bbed24cf-472b-4749-842b-ea8608a88dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component\SubstateRenderers">
+      <UniqueIdentifier>{45532a34-9bbb-4b9d-8612-a42c3128f0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Substates">
+      <UniqueIdentifier>{37dc6c2d-26d8-46e5-8778-58ba7d7ec2ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\SSAO">
+      <UniqueIdentifier>{4a8f584d-dd9e-4e3a-b264-4dc3eae0aa93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\irrXml\irrXML.cpp">
+      <Filter>Source Files\irrXml</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System_GLFW.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApplicationManager.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TimeClock.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Configuration.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneLoader.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneObject.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataManager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CubemapTexture.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ImageLoader.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IOBuffer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RandomTexture.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ShadowMapFBO.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Texture.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApplicationScene.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Animator.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Behaviour.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Light.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Particles.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Transform.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shader.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SkyBox.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gizmo.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ShadowCubeMapFBO.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\MeshCollider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\BoxCollider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\CapsuleCollider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\CharacterController.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\Collider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\PlaneCollider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\RigidBody.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\SphereCollider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\TerrainCollider.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\PhysicsMaterial.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\PhysX.cpp">
+      <Filter>Source Files\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\ParticleEmitter.cpp">
+      <Filter>Source Files\PhysX\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\ParticleEmitterPressure.cpp">
+      <Filter>Source Files\PhysX\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\ParticleEmitterRate.cpp">
+      <Filter>Source Files\PhysX\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\ParticleFactory.cpp">
+      <Filter>Source Files\PhysX\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\ParticleSystem.cpp">
+      <Filter>Source Files\PhysX\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\PxRandom.cpp">
+      <Filter>Source Files\PhysX\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MeshRenderer.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mesh.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CellularAutomata.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Environment.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Material.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HdrFBO.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OIT.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SubstateMesh.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BloomFBO.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TextRenderer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OculusVR.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ShadowMapArray.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SubstateRenderer.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SubstateRenderer2D_Flat.cpp">
+      <Filter>Source Files\Component\SubstateRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SubstateRenderer3D_Cube.cpp">
+      <Filter>Source Files\Component\SubstateRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SubstateRenderer2D_Surface.cpp">
+      <Filter>Source Files\Component\SubstateRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SubstateRenderer3D_Volume.cpp">
+      <Filter>Source Files\Component\SubstateRenderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfoBarRenderer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Frustum.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plane.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\irrXml\CXMLReaderImpl.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\irrXml\fast_atof.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\irrXml\heapsort.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\irrXml\irrArray.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\irrXml\irrString.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\irrXml\irrTypes.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\irrXml\irrXML.h">
+      <Filter>Header Files\irrXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RandomPositionScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CharacterControllerMove.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TrackingCameraScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CameraCharacterController.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PhysXParticlesDemoAppScene.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EnableDisableScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MovementScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ChangeSceneScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System_GLFW.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Glossary.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApplicationManager.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TimeClock.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Configuration.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneLoader.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneObject.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CubemapTexture.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ImageLoader.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IOBuffer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RandomTexture.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShadowMapFBO.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Texture.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApplicationScene.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Camera.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Animator.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Behaviour.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Light.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Particles.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Transform.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Shader.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SkyBox.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TestScene_11.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Gizmo.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TestScene_15.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShadowCubeMapFBO.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderBaseMesh.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSkybox.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderBlur.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderGeometry.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSSAO.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RotationAboutTargetScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\MeshCollider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\PhysXIncludeFiles.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\BoxCollider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\CapsuleCollider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\CharacterController.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\Collider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\PlaneCollider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\RigidBody.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\SphereCollider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\TerrainCollider.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\PhysicsMaterial.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\PhysX.h">
+      <Filter>Header Files\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\ParticleEmitter.h">
+      <Filter>Header Files\PhysX\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\ParticleEmitterPressure.h">
+      <Filter>Header Files\PhysX\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\ParticleEmitterRate.h">
+      <Filter>Header Files\PhysX\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\ParticleFactory.h">
+      <Filter>Header Files\PhysX\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\ParticleSystem.h">
+      <Filter>Header Files\PhysX\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IShadow.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderShadowMap.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderShadowCubeMap.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\PxRandom.h">
+      <Filter>Header Files\PhysX\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSkinnedMesh.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RotationScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LookAtScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Mathematics.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MeshRenderer.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Mesh.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Thread.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThreadPool.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderGizmo.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OpenCALFiles.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SubstateRenderer.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SimulationControllerScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CellularAutomata.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Environment.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Material.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HdrFBO.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OIT.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderPostProcessing.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderNormalViewer.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SubstateMesh.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BloomFBO.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderBloom.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderTextRenderer.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TextRenderer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LogoScene.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderLogo.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FPSRendererScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VRAppUtils.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OculusVR.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Loader.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Physics.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Shadow.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Whiterun.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_SciddicaT.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Life3D.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_MultiView.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CameraFPSControllerScript.h">
+      <Filter>Header Files\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderOcclusionRender.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShadowMapArray.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderShadowMap2.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderShadowCubeMap2.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Life3Di.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_HeatTransfer.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Wave.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene_Life2Di.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSubstateMeshVolume.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSubstateMeshVolumeFrontFace.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSubstateMeshInstanced.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderSubstateMeshSurface.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfoBarRenderer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderInfoBarRenderer.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Frustum.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plane.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Resources\XmlConfigurationFiles\Config.xml">
+      <Filter>Resource Files\XmlConfigurationFiles</Filter>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\TestGraphScene.xml">
+      <Filter>Resource Files\XmlConfigurationFiles</Filter>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\TestPhysXGraphScene.xml">
+      <Filter>Resource Files\XmlConfigurationFiles</Filter>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\TestShadowGraphScene.xml">
+      <Filter>Resource Files\XmlConfigurationFiles</Filter>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\WhiterunGraphScene_Backup.xml">
+      <Filter>Resource Files\XmlConfigurationFiles</Filter>
+    </Xml>
+    <Xml Include="Resources\XmlConfigurationFiles\WhiterunGraphScene.xml">
+      <Filter>Resource Files\XmlConfigurationFiles</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Shadow\shadow_cube_map.fs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_cube_map.gs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_cube_map.vs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_map.fs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_map.vs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_cube_map2.fs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_cube_map2.gs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_cube_map2.vs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_map2.fs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_map2.gs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\Shadow\shadow_map2.vs.glsl">
+      <Filter>Shaders\Shadow</Filter>
+    </None>
+    <None Include="Shaders\SSAO\blur.fs.glsl">
+      <Filter>Shaders\SSAO</Filter>
+    </None>
+    <None Include="Shaders\SSAO\blur.vs.glsl">
+      <Filter>Shaders\SSAO</Filter>
+    </None>
+    <None Include="Shaders\SSAO\geometry.fs.glsl">
+      <Filter>Shaders\SSAO</Filter>
+    </None>
+    <None Include="Shaders\SSAO\geometry.vs.glsl">
+      <Filter>Shaders\SSAO</Filter>
+    </None>
+    <None Include="Shaders\SSAO\ssao.fs.glsl">
+      <Filter>Shaders\SSAO</Filter>
+    </None>
+    <None Include="Shaders\SSAO\ssao.vs.glsl">
+      <Filter>Shaders\SSAO</Filter>
+    </None>
+    <None Include="Shaders\gizmo.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gizmo.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\base_mesh.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\base_mesh.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\skybox.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\skybox.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\bloom.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\bloom.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\logo.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\logo.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\normal_viewer.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\normal_viewer.gs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\normal_viewer.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\post_processing.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\post_processing.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\skinned_mesh.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\text_renderer.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\text_renderer.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_instanced.fs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_instanced.gs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_instanced.vs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_surface.fs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_surface.vs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_volume_front_face.fs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_volume_transform.vs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\Substates\substate_mesh_volume.fs.glsl">
+      <Filter>Shaders\Substates</Filter>
+    </None>
+    <None Include="Shaders\occlusion_render.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\occlusion_render.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\infobar_renderer.fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\infobar_renderer.vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DgEngine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="opengl.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

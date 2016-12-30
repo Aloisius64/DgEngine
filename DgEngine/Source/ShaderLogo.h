@@ -1,0 +1,34 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: ShaderLogo.h
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+//////////////
+// INCLUDES //
+//////////////
+
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "Shader.h"
+
+////////////////
+// NAMESPACES //
+////////////////
+using namespace std;
+
+
+namespace dg {
+	class ShaderLogo : public Shader {
+	public:
+		ShaderLogo()
+			: Shader("./Shaders/logo.vs.glsl",
+			"", "", "",
+			"./Shaders/logo.fs.glsl") {
+			m_ShaderName = SHADER_LOGO;
+		}
+
+		virtual ~ShaderLogo() {}
+	};
+}
