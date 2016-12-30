@@ -1,7 +1,7 @@
 # DgEngine
 A simple C++ game engine.
 
-The game engine is based on OpenGL, and has been developed in order to learn computer graphics.
+The game engine is based on OpenGL core profile (v4.5), and has been developed for passion in order to learn computer graphics.
 In its implementation have been implemented several techniques, including:
   - Lights (Directional, Point and Spot lights),
   - Shadows (For all tipe of lights),
@@ -15,7 +15,7 @@ In its implementation have been implemented several techniques, including:
   - Skinning,
   - Skybox.
   
-The game engine provides support for physics through Nvidia PhysX, which was integrated into the core.
+The game engine provides support for physics through Nvidia PhysX (v3.3.2), which was integrated into the core.
 
 Also you can harness the power of the device "Oculus Rift" to view VR scenes.
 
@@ -23,6 +23,7 @@ Another feature of the game engine is the ability to leverage the OpenCAL librar
  
 # Requirements
 Currently the project works only on Microsoft Windows systems, so Microsoft Visual Studio is the IDE recommended.
+All libraries used are included in the project folders.
 It required the use of the Visual Studio compiler 2012, while you can use the Visual Studio version you want.
 To run the code you simply open the Visual Studio project and compile.
 
