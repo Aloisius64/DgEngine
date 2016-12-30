@@ -65,7 +65,7 @@ int main(int argc, char** argv) {
 		//ApplicationManager::RegisterApplicationScene(new Scene_MultiView("Scene_MultiView"));
 
 		//ApplicationManager::LoadScene("Scene_Loader");
-		ApplicationManager::LoadScene("Scene_Physics");
+		//ApplicationManager::LoadScene("Scene_Physics");
 		//ApplicationManager::LoadScene("Scene_Shadow");
 		//ApplicationManager::LoadScene("Scene_Whiterun");
 		//ApplicationManager::LoadScene("Scene_SciddicaT");
@@ -73,7 +73,7 @@ int main(int argc, char** argv) {
 		//ApplicationManager::LoadScene("Scene_Life2Di");
 		//ApplicationManager::LoadScene("Scene_Life3D");
 		//ApplicationManager::LoadScene("Scene_Life3Di");
-		//ApplicationManager::LoadScene("Scene_HeatTransfer");
+		ApplicationManager::LoadScene("Scene_HeatTransfer");
 		//ApplicationManager::LoadScene("Scene_MultiView");
 
 		dg::System::Instance()->Run();
